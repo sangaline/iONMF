@@ -18,7 +18,7 @@ iONMF can then be used within Python scripts. To factorize a NumPy array, type:
     import numpy as np
     from ionmf.factorization.onmf import onmf
     X = np.random.rand(10, 10)
-    W, H = onmf(X, k=5, alpha=1.0)
+    W, H = onmf(X, rank=5, alpha=1.0)
 ```
 
 
