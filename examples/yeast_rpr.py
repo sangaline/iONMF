@@ -50,7 +50,7 @@ def run():
 
     predictions = np.array([np.argmax([rdict["Class_0"][i], rdict["Class_1"][i],
                                        rdict["Class_2"][i]])
-                            for i in xrange(len(true_y))])
+                            for i in range(len(true_y))])
 
     acc = np.sum(predictions == true_y.ravel()) / float(len(true_y))
     print "Training accuracy: ", acc

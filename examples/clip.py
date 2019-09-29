@@ -98,7 +98,7 @@ def run():
 
     positives = training_data["Y"].nonzero()[0]
     negatives = (training_data["Y"] == 0).nonzero()[0]
-    for k in xrange(model.rank):
+    for k in range(model.rank):
 
         # Values in the coefficient (W) matrix
         w_positives = model.coef_[positives, :][:, k].mean()
